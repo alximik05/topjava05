@@ -33,6 +33,7 @@
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVlNYczhnSU9JdXc">Базы данных. Обзор NoSQL и Java persistence solution без ORM.</a>
 -  <a href="https://ru.wikipedia.org/wiki/PostgreSQL">PostgreSQL</a>.
+-  <a href="http://postgresguide.com/">Postgres Guide</a>
 -  <a href="http://alexander.holbreich.org/2013/03/nosql-or-rdbms/">NoSQL or RDBMS.</a><a
                 href="http://habrahabr.ru/post/77909/">Обзор NoSQL систем</a>. <a href="http://blog.nahurst.com/visual-guide-to-nosql-systems">CAP</a>
 -  Обзор Java persistence solution без ORM: <a
@@ -96,3 +97,9 @@ Optional
     - Сделаеть тесты на чужих юзеров (delete, get, update) с тем чтобы получить NotFoundException
     - Предложить решение, как почнинить SpringMain/ AdminInMemoryTest/ SpringAdminInMemoryTest для реализации
       in-memory тестов.
+    - Сделайте индекс к таблице Meals. см. http://postgresguide.com/performance/indexes.html
+    
+###  Ваши вопросы
+> Зачем мы наследуемся в NotFoundException от RuntimeException?
+
+С ним над работать. И у нас нет никаких действий по восстановлению состояния априложения (no recoverable conditions). <a href="http://stackoverflow.com/questions/6115896/java-checked-vs-unchecked-exception-explanation">Java: checked vs unchecked exception explanation</a>
