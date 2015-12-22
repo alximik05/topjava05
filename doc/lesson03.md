@@ -101,6 +101,10 @@ Optional
     - Сделайте индекс к таблице Meals. см. http://postgresguide.com/performance/indexes.html
     
 ###  Ваши вопросы
-> Зачем мы наследуемся в NotFoundException от RuntimeException?
+> Зачем мы наследуем NotFoundException от RuntimeException?
 
-С ним над работать. И у нас нет никаких действий по восстановлению состояния априложения (no recoverable conditions). <a href="http://stackoverflow.com/questions/6115896/java-checked-vs-unchecked-exception-explanation">Java: checked vs unchecked exception explanation</a>
+Так с ним удобнее работать. И у нас нет никаких действий по восстановлению состояния приложения (no recoverable conditions). <a href="http://stackoverflow.com/questions/6115896/java-checked-vs-unchecked-exception-explanation">Java: checked vs unchecked exception explanation</a>
+
+### Ошибки в HW3:
+-  UserMealRowMapper многие делают отдельным классом. Зачем?
+   Изучаем <a href="http://easy-code.ru/lesson/java-nested-classes">вложенные,внутренние</a>,  <a href="http://easy-code.ru/lesson/local-anonymous-nested-classes-java">локальные и анонимные</a> классы. Наконец, делаем маппер как константу через лямбду.
