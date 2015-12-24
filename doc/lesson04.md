@@ -5,7 +5,7 @@
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFdVhaMklZQVNkUGc">HW3: JdbcUserMealRepositoryImpl + UserMealServiceTest</a>
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFLXBtTHVKUGRZRk0">1_ HW3.patch</a>**
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFQWhPOTM2RVpfZmc">2_ HW3_ Optional.patch</a>**
->
+
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFU0Z2R190eDllYmM">Spring: инициализация и популирование DB</a>
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFaDA2UGlGaWN0WVU">3_ init_ and_ populate_ db.patch</a>**
