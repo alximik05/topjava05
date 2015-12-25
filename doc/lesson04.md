@@ -4,6 +4,14 @@
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFdVhaMklZQVNkUGc">HW3: JdbcUserMealRepositoryImpl + UserMealServiceTest</a>
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFLXBtTHVKUGRZRk0">1_ HW3.patch</a>**
+> В meals добавил составной индекс `INDEX meals_unique_user_datetime_idx ON meals(user_id, date_time)`:
+
+ - все запросы в таблицу meals у нас идут с `user_id`
+ - по полю `date_time` также есть запросы + мы по нему сортируем список результатов
+ 
+те они- хорошие кандидаты для индексирования. на id- как на pkey индекс создается автоматически(edited)
+
+
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFQWhPOTM2RVpfZmc">2_ HW3_ Optional.patch</a>**
 
 
