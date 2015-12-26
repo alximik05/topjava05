@@ -76,6 +76,16 @@
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFd2lELVh1d2Y5clE">13_ test_ logging.patch</a>**
 
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFX2prZ3JvVmJFUlU">14_ fix_ id.patch</a>**
+ 
+## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNDlOQVpOWF82OTA">Ответы на Ваши вопросы</a>
+-  REST
+-  Зачем нужна сортировка еды
+-  Можно ли обойтись без `MapSqlParameterSource`
+-  Как происходит работа с DB в тестах
+-  Реализация RowMapper
+-  Решения проблем разработчиком
+-  Нужен ли разработчику JavaScript
+
 ## Домашнее задание HW03
 ```
     - Понять, почему перестали работать SpringMain/ AdminInMemoryTest/ SpringAdminInMemoryTest
