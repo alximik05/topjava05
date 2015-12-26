@@ -78,13 +78,13 @@
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFX2prZ3JvVmJFUlU">14_ fix_ id.patch</a>**
  
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNDlOQVpOWF82OTA">Ответы на Ваши вопросы</a>
--  REST
--  Зачем нужна сортировка еды
--  Можно ли обойтись без `MapSqlParameterSource`
--  Как происходит работа с DB в тестах
--  Реализация RowMapper
--  Решения проблем разработчиком
--  Нужен ли разработчику JavaScript
+-  Что такое REST?
+-  Зачем нужна сортировка еды?
+-  Можно ли обойтись без `MapSqlParameterSource`?
+-  Как происходит работа с DB в тестах?
+-  Как реализовывать RowMapper?
+-  Мои комментарии: решения проблем разработчиком.
+-  Нужен ли разработчику JavaScript?
 
 ## Домашнее задание HW03
 ```
