@@ -16,9 +16,8 @@
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFU0Z2R190eDllYmM">Spring: инициализация и популирование DB</a>
 - **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFaDA2UGlGaWN0WVU">3_ init_ and_ populate_ db.patch</a>**
-> IDEA может `${jdbc.initLocation}` подчеркивать красным - иногда тупит... Главное- чтобы приложение работало.
-
-> `@Sql` в тестах заменяет `@Before public void setUp()`, те выполняется перед каждым тестом
+> - IDEA может `${jdbc.initLocation}` подчеркивать красным - иногда тупит... Главное- чтобы приложение работало.
+> - `@Sql` в тестах заменяет `@Before public void setUp()`, те выполняется перед каждым тестом
 
 -  <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/jdbc.html#jdbc-initializing-datasource-xml">Инициализация базы при старте приложения</a>
 -  Инициализация базы из java: DbPopulator. <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#integration-testing-annotations-spring">Spring Testing Annotations</a>
