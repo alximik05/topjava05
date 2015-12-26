@@ -32,6 +32,7 @@
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFemRMaWwwMWdhUzg">5_ make_ entity_ add_ jpa.patch</a>**
 >  Upgrade Hibernate to 5.0.6 needed to add `javax.transaction.jta`, see <a href="https://hibernate.atlassian.net/browse/HHH-10307">5.0.4 requires javax.transaction.SystemException</a>
 
+- <a href="http://habrahabr.ru/post/265061/">JPA и Hibernate в вопросах и ответах</a>
 -  <a href="http://ru.wikipedia.org/wiki/ORM">ORM</a>. 
 -  <a href="http://en.wikibooks.org/wiki/Java_Persistence/Mapping">Mapping</a>. Описания модели Hibernate (hbm.xml/annotation)
 -  <a href="https://ru.wikipedia.org/wiki/Hibernate_(библиотека)">Hibernate</a>. Другие ORM: <a href="http://en.wikipedia.org/wiki/TopLink">TopLink</a>, <a href="http://en.wikipedia.org/wiki/EclipseLink">ElipseLink</a>, <a href="http://en.wikipedia.org/wiki/Ebean">EBean</a> (<a href="http://www.playframework.com/documentation/2.2.x/JavaEbean">used in Playframework</a>).
@@ -58,7 +59,6 @@
 
 -  Ресурсы:
    - <a href="http://www.youtube.com/watch?v=YzOTZTt-PR0">Николай Алименков — Босиком по граблям Hibernate</a>
-   - <a href="http://habrahabr.ru/post/265061/">JPA и Hibernate в вопросах и ответах</a>
    - <a href="http://stackoverflow.com/questions/8994864/how-would-i-specify-a-hibernate-pattern-annotation-using-a-regular-expression">Validate by RegExp</a>
    - <a href="http://en.wikibooks.org/wiki/Java_Persistence">Java Persistence</a>
    - <a href="http://hibernate.org/">Hibernate</a>
