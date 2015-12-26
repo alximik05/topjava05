@@ -101,6 +101,7 @@ Optional
   Spring-Jdbc, MyBatis, db-utils не реализуют JPA, это обертки к JDBC. JPA также реализована поверх JDBC.
 
 ### Подсказки по HW04
+-  IDEA не понимает в @NamedQuery `..  m.dateTime BETWEEN ..`. На функциональность это не влияет.
 -  Тк. JPQL работает с объектами мы не можем использовать userId например для сохранения. Можно сделать пример так:
 
         User ref = em.getReference(User.class, userId);
