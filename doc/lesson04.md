@@ -100,6 +100,9 @@ Optional
 > JPA- это спецификация, ее реализации- Hibernate, OpenJPA, EclipceLink.
   Spring-Jdbc, MyBatis, db-utils не реализуют JPA, это обертки к JDBC. JPA также реализована поверх JDBC.
 
+- В зависимостях maven `hibernate-entitymanager` тянет за собой `jboss-logging`. Как будет происходить логгирование?
+> Гуглим: <a href="http://stackoverflow.com/questions/11639997/how-do-you-configure-logging-in-hibernate-4-to-use-slf4j">How do you configure logging in Hibernate 4 to use SLF4J</a>. В нашем проекте автоматически подхватывается `logback-classic`.
+
 ### Подсказки по HW04
 -  IDEA не понимает в @NamedQuery `..  m.dateTime BETWEEN ..`. На функциональность это не влияет.
 -  Тк. JPQL работает с объектами мы не можем использовать userId например для сохранения. Можно сделать пример так:
