@@ -70,7 +70,7 @@
    -  Починка JUnit: <a href="http://stackoverflow.com/questions/10013288/another-unnamed-cachemanager-already-exists-in-the-same-vm-ehcache-2-5">один кэш на JVM</a>
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFZFdWWFdwams0eGM">Домашнее задание HW05</a>
-     Имплементировать и протестировать DataJpaUserMealRepositoryImpl 
+     Имплементировать DataJpaUserMealRepositoryImpl 
      Разделить реализации Repository по профилям Spring: jdbc, jpa, datajpa 
             (общее в профилях можно объединять, например <beans profile="datajpa,jpa">)
      Сделать тесты всех реализаций (jdbc, jpa, datajpa) через наследование (без дублирования),
