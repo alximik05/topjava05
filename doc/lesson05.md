@@ -88,3 +88,4 @@ Optional
 
 ## Подсказки по HW05
 - Для того, чтобы не запускались родительские классы тестов нужно сделать их `abstract`
+- Для IDEA не забудте выставить Spring Profiles в `spring-db.xml`: нарпимер `datajpa, postgres`
