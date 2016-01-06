@@ -47,7 +47,7 @@
 -  Разрешение зависимостей: <a href="http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/">Maven BOM [Bill Of Materials] Dependency</a>
 -  <a href="http://habrahabr.ru/post/232381/">Делегирование. (Spring Data JPA)</a>
 -  <a href="http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation">Query methods</a>
--  <a href="http://www.youtube.com/watch?v=c32Ly9mGVTA">Spring Data – новый взгляд на persistence (видео с JeeConf)</a>
+-  <a href="http://jeeconf.com/archive/jeeconf-2013/materials/spring-data/">Spring Data – новый взгляд на persistence (JeeConf)</a>
     
 -  Ресурсы:
    -  <a href="https://github.com/spring-projects?query=spring-data">Github repositories</a></li>
@@ -87,6 +87,14 @@ Optional
      -  достать по id еду вместе с пользователем
      Обращения к DB сделать в одной транзакции
 
+## Ваши вопросы
+> В <a href="https://github.com/spring-projects/spring-petclinic/tree/master/src/main/java/org/springframework/samples/petclinic/repository/springdatajpa">spring-petclinic</a> DataJpa реализована без проксирования и без доп. классов. В таком виде как у них, spring data смотрится, конечно, намного лаконичней других реализаций, но у нас получилось  вдвое больше кода, чем с тем же jpa или jdbc. Плюс, как я увидела, только пожалуй в том, что query находятся прямо в репозитории, а  не где-то там в другом пакете. Так что получается, spring data лучше подходит для простейших crud без всяких "фишек"? или в чем его достоинство для больших и сложных проектов?
+
+Достоинство DATA-JPA по сравнению например с JPA: есть типизация, готовые реализации типовых методов CRUD а также paging, data-common, когда мы можем переключить реализацию, например, на mongoDb и пр. Подробнее о них есть в видео <a href="http://jeeconf.com/archive/jeeconf-2013/materials/spring-data/">Spring Data – новый взгляд на persistence</a>.
+Я ввел доп. проксирование для устранения минусов подхода DATA-JPA: невозможность дебага и привязка к интерфейсу JpaRepository.
+Кода становится побольше, но выигрыш этого стоит. Вообще, думаю, для средних размеров проектов такой подход может заменить слой сервисов.
+
 ## Подсказки по HW05
 - Для того, чтобы не запускались родительские классы тестов нужно сделать их `abstract`
 - Для IDEA не забудте выставить Spring Profiles в `spring-db.xml`: нарпимер `datajpa, postgres`
+- Починка MealServlet / SpringMain предполагает погуглить на тему: поднять Spring контекст с профилями без использования VM опций
