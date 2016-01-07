@@ -99,4 +99,5 @@ Optional
 - Для IDEA не забудте выставить Spring Profiles в `spring-db.xml`: нарпимер `datajpa, postgres`
 - Общие части для всех в `spring-db.xml` можно оставить как есть без профилей, но до первого `<beans profile=` (вверху файла).
 - Починка MealServlet / SpringMain предполагает погуглить на тему: поднять Spring контекст с профилями без использования VM опций
+- В `DataJpaUserMealRepositoryImpl.save` попробуйте как упражнение обойтись одним `proxy.save(userMeal)`
 
