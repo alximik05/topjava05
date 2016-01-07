@@ -96,7 +96,7 @@ Optional
 
 ## Подсказки по HW05
 - Для того, чтобы не запускались родительские классы тестов нужно сделать их `abstract`
-- Для IDEA не забудте выставить Spring Profiles в `spring-db.xml`: нарпимер `datajpa, postgres`
+- Для IDEA не забудте выставить в `spring-db.xml` справа вверху в Change Profiles... профили, например `datajpa, postgres`
 - Общие части для всех в `spring-db.xml` можно оставить как есть без профилей, но до первого `<beans profile=` (вверху файла).
 - Починка MealServlet / SpringMain предполагает погуглить на тему: поднять Spring контекст с профилями без использования VM опций
 - В `DataJpaUserMealRepositoryImpl.save` попробуйте как упражнение обойтись одним `proxy.save(userMeal)`
