@@ -28,6 +28,7 @@
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFNW0yVWhXcGNPU2M">Профили Maven и Spring</a>
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFcGw0a19PdVJSbG8">3_ profiles_ connection_ pool.patch</a>**
+- <a href="https://dzone.com/articles/using-spring-profiles-xml">Using Spring Profiles in XML Config</a>
 
  > Для переключения на HSQLDB необходимо:
  >  - поменять в окне Maven Projects профиль (Profiles) на `hsqldb` и сделать `Reimport All Maven Projects` (1я кнопка)
