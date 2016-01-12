@@ -148,5 +148,5 @@ Hibernate supports following open-source cache implementations out-of-the-box: E
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 ```
-Проверьте также, что проперти файл у вас в UTF-8 (в IDEA справа внизу в статусе есть кодировка и можно перекодировать)
+Проверьте также, что проперти файл у вас в UTF-8 (в IDEA справа внизу в статусе есть кодировка и можно перекодировать).
 Убедитесь в настройках, что кодировка везде UTF-8: https://github.com/JavaOPs/topjava/wiki/IDEA (Проблемы с кодировкой)
