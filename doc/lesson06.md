@@ -30,6 +30,8 @@
    -  <a href="http://stackoverflow.com/questions/3663979/how-to-use-jpa2s-cacheable-instead-of-hibernates-cache">JPA2 @Cacheable vs Hibernate @Cache</a>
    -  <a href="http://habrahabr.ru/post/25140/">Распределённая система кеша ehcache</a>
    -  <a href="http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html_single/#performance-cache-mapping">Cache mappings</a>
+   -  <a href="http://vladmihalcea.com/2015/06/08/how-does-hibernate-query-cache-work/">How does Hibernate Query Cache work</a>
+   -  <a href="http://blog.jhades.org/setup-and-gotchas-of-the-hibernate-second-level-and-query-caches/">Pitfalls of the Hibernate Second-Level / Query Caches</a>
 
 ## <a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFVE1jWkRucm1UTjA">Spring Web</a>
 -  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFTnhDZGM4Z3Nxbnc">7_ spring_ web.patch</a>**
@@ -122,12 +124,21 @@ Hibernate supports following open-source cache implementations out-of-the-box: E
 
 См видео урока "Динамическое изменение профиля при запуске". В плагине мы задаем параметры JVM запуска Tomcat
 
-
 > Почему мы не используем элемент `<context:annotation-config/>` в `spring-db.xml`?
 
 В проекте у нас сейчас 2 Spring контекста: `spring-mvc.xml (см. web.xml, DispatcherServlet)` и родительский `spring/spring-app.xml + spring/spring-db.xml (web.xml, contextConfigLocation)`.
 Грубо: 2 мапы, причем для mvc доступно все что есть в родителе. Те spring-db.xml не является отдельным самотоятельным контекстом и достаточно того, что `<context:annotation-config/>` у нас есть в `spring-app.xml`.
 
+> В _ehcache.xml_ чем _<cache name="users"_ отличается от _<cache name="ru.javawebinar.topjava.model.User"_?
+
+_user_ - это имя региона ecache, которое мы выбрали для кэширования c помощью Spring Cache `Collection<User> getAll()` в `UserServiceImpl`.
+_ru.javawebinar.topjava.model.User_ - имя региона, которое использует Hibernate для кэширования содержимого таблицы _USERS_. 
+Мы можем оставить настройки по умолчанию, либо задать свои.
+
+> A `@NamedQuery` или `@Query` подвержены кешу запросов? Т.е. если мы поставим _USE_QUERY_CACHE_ value="true"_ будет Hibernate их кешировать?
+     
+Чтобы запрос кэшировался, кроме true в конфигурации нужно еще явно выставить запросу _setCacheable_ (http://vladmihalcea.com/2015/06/08/how-does-hibernate-query-cache-work/). По поводу кэширования @NamedQuery нашел _@QueryHint_: https://docs.jboss.org/jbossas/docs/Clustering_Guide/5/html/ch04s02s03.html
+     
 ## Подсказки по HW06
 - Неверная кодировка UTF-8 с Spring обычно решается фильтром `CharacterEncodingFilter`:
 ```
