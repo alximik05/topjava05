@@ -58,6 +58,8 @@
 -  <a href="http://habrahabr.ru/post/232381/">@Transactional в тестах. Настройка EntityManagerFactory</a>
 
 -  Ресурсы:
+   - <a href="http://www.byteslounge.com/tutorials/spring-transaction-propagation-tutorial">Spring transaction propagation tutorial</a>
+   - <a href="https://dzone.com/refcardz/getting-started-with-jpa">Getting Started with JPA</a>
    - <a href="http://www.youtube.com/watch?v=YzOTZTt-PR0">Николай Алименков — Босиком по граблям Hibernate</a>
    - <a href="http://stackoverflow.com/questions/8994864/how-would-i-specify-a-hibernate-pattern-annotation-using-a-regular-expression">Validate by RegExp</a>
    - <a href="http://en.wikibooks.org/wiki/Java_Persistence">Java Persistence</a>
