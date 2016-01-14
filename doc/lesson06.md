@@ -166,3 +166,4 @@ _ru.javawebinar.topjava.model.User_ - имя региона, которое ис
 Убедитесь в настройках, что кодировка везде UTF-8: https://github.com/JavaOPs/topjava/wiki/IDEA (Проблемы с кодировкой)
 
 - Функциональность еды в контроллерах должна быть в пакете meal и сделайте как для User - наследование от абстрактного класса.
+- Если неправильно формируется url относительно контекста приложения посмотрите http://stackoverflow.com/questions/4764405/how-to-use-relative-paths-without-including-the-context-root-name
