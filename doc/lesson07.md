@@ -89,6 +89,7 @@
      Следите чтобы url в тестах совпадал с параметрами в методе контроллера.
      Можно добавить логирование <logger name="org.springframework.web" level="debug"/> для проверки маршрутизации.
 
+-  <a href="http://blog.codeleak.pl/2014/06/spring-4-datetimeformat-with-java-8.html">@DATETIMEFORMAT WITH JAVA 8 DATE-TIME API</a>
 
 Optional
 
@@ -96,9 +97,6 @@ Optional
 
      Протестировать UserMealRestController через SoapUi или curl.
 
-Ресурсы
-
--  <a href="http://blog.codeleak.pl/2014/06/spring-4-datetimeformat-with-java-8.html">@DATETIMEFORMAT WITH JAVA 8 DATE-TIME API</a>
 -  <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html#mvc-config-conversion">Кастомный Spring конвертор</a>
 -  <a href="http://stackoverflow.com/questions/13048368/difference-between-spring-mvc-formatters-and-converters">Difference between Spring MVC formatters and converters</a>
 
