@@ -55,7 +55,7 @@
 -  <a href="https://www.sghill.net/how-do-i-write-a-jackson-json-serializer-deserializer.html">Jackson JSON Serializer & Deserializer</a>
 -  Сериализации hibernate lazy-loading с помощью <a href="https://github.com/FasterXML/jackson-datatype-hibernate">jackson-datatype-hibernate</a>
 
--  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFZ2tZT3dkZUNjaEE">12_ jackson_ hibernate.patch</a>**
+-  **<a href="https://drive.google.com/open?id=0B9Ye2auQ_NsFZ2tZT3dkZUNjaEE">12_ jackson_ jsr310.patch</a>**
 >  Переводим сериализацию-десеарелизацию LocalDateTime на jsr310 и стандартный формат ISO-8601
 -  <a href="http://stackoverflow.com/questions/28802544/java-8-localdate-jackson-format#28803634">jackson-datatype-jsr310</a>
 
